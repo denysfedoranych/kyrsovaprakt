@@ -1,0 +1,69 @@
+<div class="container">
+  <form>
+    <div class="mb-3">
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">Чим:</label>
+      <select class="form-select" [(ngModel)]="transport" name="transport">
+        <option value="pot">Потяг</option>
+        <option value="avt">Автобус</option>
+        <option value="lit">Літак</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">Куди:</label>
+      <input type="text" class="form-control" [(ngModel)]="destination" name="destination">
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">Звідки:</label>
+      <input type="text" class="form-control" [(ngModel)]="point" name="point">
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">Ціна:</label>
+      <input type="text" class="form-control" [(ngModel)]="price" name="price">
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">Час:</label>
+      <input type="text" class="form-control" [(ngModel)]="time" name="time">
+    </div>
+    <div class="mb-3">
+        <label for="name" class="form-label">Фото:</label>
+        <input type="text" class="form-control" [(ngModel)]="photo" name="photo">
+      </div>
+    <button type="button" class="btn btn-success" (click)="addFlat()" *ngIf="!editStatus">Add</button>
+    <button type="button" class="btn btn-primary" (click)="save()" *ngIf="editStatus">Save</button>
+  </form>
+  <hr class="mb-3 mt-3">
+  <table class="table align-middle" style="text-align: center;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Картинка</th>
+        <th scope="col">Вид Транспорту</th>
+        <th scope="col">Ціна</th>
+        <th scope="col">Звідки</th>
+        <th scope="col">Куди</th>
+        <th scope="col">Час</th>
+        <th scope="col">Змінити</th>
+        <th scope="col">Видалити</th>
+      </tr>
+    </thead>
+    <tbody class="align-middle">
+      <tr *ngFor="let trans of arrayTrans,index as i">
+        <td>{{i+1}}</td>
+        <td> <img height="70" width="100" [src]="trans.photo" alt=""></td>
+        <td>{{trans.transport}}</td>
+        <td>{{trans.price}}</td>
+        <td>{{trans.destination}}</td>
+        <td>{{trans.point}}</td>
+        <td>{{trans.time}}</td>
+        <td>
+          <button class="btn btn-warning" (click)="edit(trans)">Edit</button>
+        </td>
+        <td>
+          <button class="btn btn-danger" (click)="delete(trans.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

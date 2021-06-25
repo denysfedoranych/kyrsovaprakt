@@ -1,0 +1,12 @@
+section {
+    background-size: cover;
+    background-image: url('https://proizd.ua/main-search-bg.87e585cbcba0d6614a1b.jpg');
+  }
+  
+  .container {
+    padding: 100px 100px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  

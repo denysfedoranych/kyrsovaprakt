@@ -1,0 +1,40 @@
+footer {
+  height: 250px;
+  background-color: cornsilk;
+  display: flex;
+  justify-content: space-around;
+  color: rgb(153, 62, 1);
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  background-image: url('https://st2.depositphotos.com/4472335/11700/i/950/depositphotos_117002080-stock-photo-vector-templates-with-a-locomotive.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.ostap {
+  display: flex;
+  width: 550px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+section{
+  background-color: cornsilk;
+  color: rgb(153, 62, 1);
+  
+}

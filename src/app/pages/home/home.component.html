@@ -1,0 +1,15 @@
+<section>
+  <div class="container">
+    <div class="card" style="width: 18rem;" *ngFor="let trans of arrayTrans">
+      <img [src]="trans.photo" height="250" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 style="text-align: center;" class="card-title">Час поїздки: {{trans.time}} год</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Куди: {{trans.destination}}</li>
+        <li style="text-align: right;" class="list-group-item">Звідки: {{trans.point}}</li>
+        <li style="text-align: center;" class="list-group-item">Ціна: {{trans.price}} грн</li>
+      </ul>
+    </div>
+  </div>
+</section>

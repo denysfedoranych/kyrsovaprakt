@@ -1,0 +1,39 @@
+{
+  "flights": [
+    {
+      "transport": "pot",
+      "destination": "Львів",
+      "point": "Київ",
+      "price": "2000",
+      "photo": "https://i.pinimg.com/736x/6e/0f/5f/6e0f5fe2a886d2f8c68d030a6d99dc1b.jpg",
+      "id": 1
+    },
+    {
+      "transport": "avt",
+      "destination": "Харків",
+      "point": "Львів",
+      "price": "4000",
+      "time": "12",
+      "photo": "https://www.unn.com.ua/uploads/news/2019/10/20/ce0dabb8cbfbe67cff8a055b92d559113dda7c93.jpg",
+      "id": 2
+    },
+    {
+      "transport": "lit",
+      "destination": "Вінниця",
+      "point": "Київ",
+      "price": "3000",
+      "time": "5",
+      "photo": "https://ukranews.com/upload/news/2019/06/13/5d021ba50248f-kyiv-today-2015_1200x900.jpg",
+      "id": 3
+    },
+    {
+      "transport": "pot",
+      "destination": "Хуст",
+      "point": "Маріуполь",
+      "price": "3000",
+      "time": "24 ",
+      "photo": "https://khust-miskrada.gov.ua/wp-content/uploads/2020/04/2680775_800x600_f59d63c-18199098-415196052177904-5339440916577778586-n.jpg",
+      "id": 4
+    }
+  ]
+}
